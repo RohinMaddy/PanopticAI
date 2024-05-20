@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B08F9552BFB61CD0071542F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08F9542BFB61CD0071542F /* NetworkManager.swift */; };
+		9B08F9572BFB64580071542F /* WikiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08F9562BFB64580071542F /* WikiModel.swift */; };
 		9BF4438D2BEE5CDE001081EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4438C2BEE5CDE001081EB /* AppDelegate.swift */; };
 		9BF4438F2BEE5CDE001081EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4438E2BEE5CDE001081EB /* SceneDelegate.swift */; };
 		9BF443912BEE5CDE001081EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF443902BEE5CDE001081EB /* ViewController.swift */; };
 		9BF443942BEE5CDE001081EB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9BF443932BEE5CDE001081EB /* Base */; };
 		9BF443962BEE5CDF001081EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF443952BEE5CDF001081EB /* Assets.xcassets */; };
 		9BF443992BEE5CDF001081EB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9BF443982BEE5CDF001081EB /* Base */; };
+		9BF443A12BEE5D0E001081EB /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BF443A02BEE5D0E001081EB /* MobileNetV2.mlmodel */; };
+		D66279F1AE2394028D75ED8F /* Pods_PanopticAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73248AC6D4DC3EE34D6892F /* Pods_PanopticAI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33B1C8A3C78C6E0B75EAFEC6 /* Pods-PanopticAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanopticAI.debug.xcconfig"; path = "Target Support Files/Pods-PanopticAI/Pods-PanopticAI.debug.xcconfig"; sourceTree = "<group>"; };
+		5DD56C5FB106737280F5B813 /* Pods-PanopticAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PanopticAI.release.xcconfig"; path = "Target Support Files/Pods-PanopticAI/Pods-PanopticAI.release.xcconfig"; sourceTree = "<group>"; };
+		9B08F9542BFB61CD0071542F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9B08F9562BFB64580071542F /* WikiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiModel.swift; sourceTree = "<group>"; };
 		9BF443892BEE5CDE001081EB /* PanopticAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanopticAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF4438C2BEE5CDE001081EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BF4438E2BEE5CDE001081EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		9BF443952BEE5CDF001081EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BF443982BEE5CDF001081EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BF4439A2BEE5CDF001081EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF443A02BEE5D0E001081EB /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		B73248AC6D4DC3EE34D6892F /* Pods_PanopticAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PanopticAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66279F1AE2394028D75ED8F /* Pods_PanopticAI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1621D0D3C6AE7226C0859317 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B73248AC6D4DC3EE34D6892F /* Pods_PanopticAI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74AFAD3EBEDEE9437B4E8E9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33B1C8A3C78C6E0B75EAFEC6 /* Pods-PanopticAI.debug.xcconfig */,
+				5DD56C5FB106737280F5B813 /* Pods-PanopticAI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B08F9582BFB82870071542F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BF443902BEE5CDE001081EB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9B08F9592BFB82970071542F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B08F9562BFB64580071542F /* WikiModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9B08F95A2BFB82A50071542F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BF443972BEE5CDF001081EB /* LaunchScreen.storyboard */,
+				9BF443922BEE5CDE001081EB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9B08F95B2BFB82B70071542F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BF4438E2BEE5CDE001081EB /* SceneDelegate.swift */,
+				9BF4438C2BEE5CDE001081EB /* AppDelegate.swift */,
+				9B08F9542BFB61CD0071542F /* NetworkManager.swift */,
+				9BF443A02BEE5D0E001081EB /* MobileNetV2.mlmodel */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9BF443802BEE5CDE001081EB = {
 			isa = PBXGroup;
 			children = (
 				9BF4438B2BEE5CDE001081EB /* PanopticAI */,
 				9BF4438A2BEE5CDE001081EB /* Products */,
+				74AFAD3EBEDEE9437B4E8E9E /* Pods */,
+				1621D0D3C6AE7226C0859317 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +122,11 @@
 		9BF4438B2BEE5CDE001081EB /* PanopticAI */ = {
 			isa = PBXGroup;
 			children = (
-				9BF4438C2BEE5CDE001081EB /* AppDelegate.swift */,
-				9BF4438E2BEE5CDE001081EB /* SceneDelegate.swift */,
-				9BF443902BEE5CDE001081EB /* ViewController.swift */,
-				9BF443922BEE5CDE001081EB /* Main.storyboard */,
+				9B08F95B2BFB82B70071542F /* Supporting Files */,
+				9B08F95A2BFB82A50071542F /* View */,
+				9B08F9592BFB82970071542F /* Model */,
+				9B08F9582BFB82870071542F /* Controller */,
 				9BF443952BEE5CDF001081EB /* Assets.xcassets */,
-				9BF443972BEE5CDF001081EB /* LaunchScreen.storyboard */,
 				9BF4439A2BEE5CDF001081EB /* Info.plist */,
 			);
 			path = PanopticAI;
@@ -74,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BF4439D2BEE5CDF001081EB /* Build configuration list for PBXNativeTarget "PanopticAI" */;
 			buildPhases = (
+				FB5EF6BF94E7D3D3219EF0F1 /* [CP] Check Pods Manifest.lock */,
 				9BF443852BEE5CDE001081EB /* Sources */,
 				9BF443862BEE5CDE001081EB /* Frameworks */,
 				9BF443872BEE5CDE001081EB /* Resources */,
+				ADBF3F1534944C4C77964949 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +200,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ADBF3F1534944C4C77964949 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PanopticAI/Pods-PanopticAI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PanopticAI/Pods-PanopticAI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PanopticAI/Pods-PanopticAI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB5EF6BF94E7D3D3219EF0F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PanopticAI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BF443852BEE5CDE001081EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9BF443912BEE5CDE001081EB /* ViewController.swift in Sources */,
+				9B08F9572BFB64580071542F /* WikiModel.swift in Sources */,
 				9BF4438D2BEE5CDE001081EB /* AppDelegate.swift in Sources */,
+				9B08F9552BFB61CD0071542F /* NetworkManager.swift in Sources */,
+				9BF443A12BEE5D0E001081EB /* MobileNetV2.mlmodel in Sources */,
 				9BF4438F2BEE5CDE001081EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,14 +399,17 @@
 		};
 		9BF4439E2BEE5CDF001081EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33B1C8A3C78C6E0B75EAFEC6 /* Pods-PanopticAI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9T822S676;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanopticAI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"We need access to your camera to get the picture of the object\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,14 +430,17 @@
 		};
 		9BF4439F2BEE5CDF001081EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD56C5FB106737280F5B813 /* Pods-PanopticAI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q9T822S676;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanopticAI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"We need access to your camera to get the picture of the object\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
